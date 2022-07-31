@@ -80,14 +80,12 @@
             // chkToogleWebcam
             // 
             this.chkToogleWebcam.AutoSize = true;
-            this.chkToogleWebcam.Enabled = false;
             this.chkToogleWebcam.Location = new System.Drawing.Point(7, 32);
             this.chkToogleWebcam.Name = "chkToogleWebcam";
             this.chkToogleWebcam.Size = new System.Drawing.Size(161, 17);
             this.chkToogleWebcam.TabIndex = 6;
             this.chkToogleWebcam.Text = "Activar/Desactivar Webcam";
             this.chkToogleWebcam.UseVisualStyleBackColor = true;
-            this.chkToogleWebcam.Visible = false;
             this.chkToogleWebcam.CheckedChanged += new System.EventHandler(this.chkToogleWebcam_CheckedChanged);
             // 
             // cmbDevices
@@ -125,6 +123,7 @@
             this.Name = "frmMain";
             this.Text = "ArduinoDetectMicroCamMute";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
+            this.Load += new System.EventHandler(this.onLoadFrm);
             this.ResumeLayout(false);
             this.PerformLayout();
 
